@@ -64,6 +64,7 @@ export default function Home() {
                 <h4 className={styles.projectTitle}>Cool ICO:</h4>
                 <p className={styles.projectDesc}>When practicing my solidity development and DAPP creation skills, I created a whole ecosystem of 'Cool' Projects like DAO's, NFT projects, ICO's and a DEX.</p>
                 <div className={styles.btnContainer}>
+                  <a target="_blank" href="https://ico-phi-coral.vercel.app/" className={styles.projectBtn}>View Project</a>
                   <a target="_blank" href="https://github.com/CadeDev17/ICO" className={styles.projectBtn}>View Code</a>
                 </div>
               </div>
