@@ -3,7 +3,7 @@
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .infoContainer {
         display: flex;
         flex-direction: column;

@@ -58,7 +58,7 @@
   background-color: #24243e;
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
   .contactForm {
     width: 90%
   }
