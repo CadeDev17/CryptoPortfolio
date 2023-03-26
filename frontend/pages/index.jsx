@@ -57,6 +57,7 @@ export default function Home() {
                 <h4 className={styles.projectTitle}>King of The Hill:</h4>
                 <p className={styles.projectDesc}>Become the king by sending in more funds than the last king. Then, when you get dethroned, you get all the funds sent by your predesessor. Win-Win! (Inspired by Ethernaut)</p>
                 <div className={styles.btnContainer}>
+                  <a target="_blank" href="https://kingofthehill1-ckul.vercel.app/" className={styles.projectBtn}>View Project</a>
                   <a target="_blank" href="https://github.com/CadeDev17/kingofthehill1" className={styles.projectBtn}>View Code</a>
                 </div>
               </div>
