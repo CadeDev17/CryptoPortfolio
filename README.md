@@ -1,4 +1,4 @@
-# This is my Crypto Portfolio
+# This is my Audit Portfolio
 
 I created this portfolio to display my knowledge as a Smart Contract Auditor 
 and also some of my favorite DAPPS that I have made in the past.
@@ -11,8 +11,7 @@ This project is created using Hardhat, NextJS, React, JavaScript, and Solidity f
 
 - [x] Complete the initial design idea of the portfolio
 - [x] Execute the design plan and integrate the related smart contracts
-- [ ] Add first smart contract audit/competition
-- [ ] Add first DAPP 
+- [x] Add first smart contract audit/competition
 
 ## Author
 

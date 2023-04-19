@@ -1,3 +1,4 @@
+import { react, useEffect } from 'react'
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -6,6 +7,20 @@ import MobileAuditingInfo from '../components/MobileAuditingInfo';
 
 
 export default function Home() {
+
+  useEffect(() => {
+    const script1 = document.createElement('script');
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-5B9YRLQL0R";
+    script1.async = true;
+
+    const script2 = document.createElement('script');
+  
+    document.body.appendChild(script1);
+  
+    return () => {
+      document.body.removeChild(script1);
+    }
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -43,53 +58,17 @@ export default function Home() {
               </div>
             </div>
 
-            <h2 className={styles.readmeSectionHeader}>My Developed Projects:</h2>
-            <div className={styles.projectsContainer} id="cryptoprojects">
-              <div className={styles.project}>
-                <h4 className={styles.projectTitle}>Pricklets NFT:</h4>
-                <p className={styles.projectDesc}>Proton Blockchain's own collection of little prick chicklets. One pricklet gets your the whole 9 yards of everything you could ever want in an NFT.</p>
-                <div className={styles.btnContainer}>
-                  <a target="_blank" href="https://lingering-river-7335.on.fleek.co/" className={styles.projectBtn}>View Project</a>
-                  <a target="_blank" href="https://github.com/CadeDev17/Pricklets-NFT" className={styles.projectBtn}>View Code</a>
-                </div>
-              </div>
-              <div className={styles.project}>
-                <h4 className={styles.projectTitle}>King of The Hill:</h4>
-                <p className={styles.projectDesc}>Become the king by sending in more funds than the last king. Then, when you get dethroned, you get all the funds sent by your predesessor. Win-Win! (Inspired by Ethernaut)</p>
-                <div className={styles.btnContainer}>
-                  <a target="_blank" href="https://kingofthehill1-ckul.vercel.app/" className={styles.projectBtn}>View Project</a>
-                  <a target="_blank" href="https://github.com/CadeDev17/kingofthehill1" className={styles.projectBtn}>View Code</a>
-                </div>
-              </div>
-              <div className={styles.project}>
-                <h4 className={styles.projectTitle}>Cool ICO:</h4>
-                <p className={styles.projectDesc}>When practicing my solidity development and DAPP creation skills, I created a whole ecosystem of 'Cool' Projects like DAO's, NFT projects, ICO's and a DEX.</p>
-                <div className={styles.btnContainer}>
-                  <a target="_blank" href="https://ico-phi-coral.vercel.app/" className={styles.projectBtn}>View Project</a>
-                  <a target="_blank" href="https://github.com/CadeDev17/ICO" className={styles.projectBtn}>View Code</a>
-                </div>
-              </div>
-              <div className={styles.project}>
-                <h4 className={styles.projectTitle}>Not My Influensoor:</h4>
-                <p className={styles.projectDesc}>A compiled list of all of the main characters in crypto and their trust rating. Real users will log on and vote on each influencoor and have the option to write something verifiably true about them. (In Progress)</p>
-                <div className={styles.btnContainer}>
-                  <a target="_blank" href="https://github.com/CadeDev17/NotMyInfluencoor" className={styles.projectBtn}>View Latest Commit</a>
-                </div>
-              </div>
-            </div>
-
             <h2 className={styles.readmeSectionHeader1}>Code4rena Competitions:</h2>
             <table className={styles.table} id="auditchallenges">
               <thead>
                 <tr>
                   <th>Date</th>
-                  <th>Protocol Name (Click for More Detail)</th>
+                  <th>Protocol Name</th>
                   <th>High</th>
                   <th>Medium</th>
                   <th>Low</th>
                   <th>Non-Critical</th>
                   <th>Gas</th>
-                  <th>Rank</th>
                 </tr>
               </thead>
               <tbody>
@@ -101,45 +80,22 @@ export default function Home() {
                   <td>0</td>
                   <td>0</td>
                   <td>6</td>
-                  <td>No Results Yet</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <td>2023-04</td>
+                  <td>Frankencoin</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>2</td>
                 </tr>
               </tbody>
             </table>
 
-            <h2 className={styles.readmeSectionHeader1}>Practice Audit Reports (Track my progress):</h2>
-            <table className={styles.table} id="auditchallenges">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Report Name (Click for More Detail)</th>
-                  <th>High</th>
-                  <th>Medium</th>
-                  <th>Low</th>
-                  <th>Non-Critical</th>
-                  <th>Gas</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>2023-03</td>
-                  <td><a target="_blank" className={styles.competitionLink} href="https://code4rena.com/reports/2022-09-frax">Practice Audit For Frax Finance</a></td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td>2023-03</td>
-                  <td><a target="_blank" className={styles.competitionLink} href="https://github.com/CadeDev17/SmartContractAudits/tree/master/Code4rena/Y2K_Finance">Practice Audit for Y2k Finance</a></td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>6</td>
-                </tr>
-              </tbody>
-            </table>
+            
             <h2 className={styles.readmeSectionHeader1}>Table of knowledge:</h2>
             <table className={styles.table} id="auditchallenges">
               <thead>
@@ -172,7 +128,7 @@ export default function Home() {
           <a className={styles.social} href="https://twitter.com/bitsorbytes"><img className={styles.social} src="../../twitter.svg" alt="twitter icon" /></a>
           <a className={styles.social} href="https://github.com/CadeDev17?tab=overview&from=2023-03-01&to=2023-03-19"><img className={styles.social} src="../../github.svg" alt="github icon" /></a>
         </div>
-      </footer> 
+      </footer>
     </div>
   );
 }
