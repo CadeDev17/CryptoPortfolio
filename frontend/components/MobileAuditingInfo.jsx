@@ -9,7 +9,7 @@ const MobileAuditingInfo = () => {
             <div className={styles.section}>
                 <span>Code4rena:</span>
                 <ul>
-                    <li><a>Asymmetry Report</a></li>
+                    <li><a href="https://github.com/CadeDev17/SmartContractAudits/tree/master/Code4rena/Frankencoin">Frankencoin Report</a></li>
                 </ul>
             </div>
             <div className={styles.section}>

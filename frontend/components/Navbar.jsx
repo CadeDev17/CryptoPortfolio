@@ -32,9 +32,6 @@ const Navbar = () => {
       <a className={styles.navLink} href="#aboutme">
         About Me
       </a>
-      <a className={styles.navLink} href="#cryptoprojects">
-        Crypto Projects
-      </a>
       <a className={styles.navLink} href="#auditchallenges">
         Audit Challenges
       </a>

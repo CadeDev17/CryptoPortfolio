@@ -52,7 +52,7 @@ export default function Home() {
                 <img className={styles.summaryImage} src="./twitterpfp.png" alt="bitsorbytes twitter pfp" />
                 <ul>
                   <li className={styles.listItem}>I have been a full stack developer for over 2 years now, working with .NET at my local police department.</li>
-                  <li className={styles.listItem}>Started my career in crypto development a little over a year ago, building various DAPPs.</li>
+                  <li className={styles.listItem}>Found crypto in early 2020 and started trading shitcoins and losing money on NFT's until I realized the building side of crypto was much more lucrative (Yes I was trading pilled for almost 3 years...)</li>
                   <li className={styles.listItem}>Started auditing smart contracts in late early March, 2023 and strive to be an employed smart contract auditor by the end of 2023.</li>
                 </ul>
               </div>
@@ -73,19 +73,8 @@ export default function Home() {
               </thead>
               <tbody>
                 <tr>
-                  <td>2023-03</td>
-                  <td>Asymmetry</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>6</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
                   <td>2023-04</td>
-                  <td>Frankencoin</td>
+                  <td><a href="https://github.com/CadeDev17/SmartContractAudits/tree/master/Code4rena/Frankencoin">Frankencoin</a></td>
                   <td>0</td>
                   <td>3</td>
                   <td>0</td>
